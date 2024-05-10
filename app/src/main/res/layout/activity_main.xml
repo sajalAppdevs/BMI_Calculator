@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter height(in meters)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"
+        android:padding="16dp" />
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter weight ( in kilograms)"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/editTextHeight"
+        android:layout_marginTop="16dp"
+        android:padding="16dp" />
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate BMI"
+        android:layout_below="@id/editTextWeight"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"/>
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCalculate"
+        android:layout_marginTop="16dp"
+        android:padding="16dp" />
+    <ProgressBar
+        android:id="@+id/progressBarBMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResult"
+        android:layout_marginTop="16dp"
+        android:padding="16dp" />
+
+</RelativeLayout>
